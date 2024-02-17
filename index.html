@@ -1,0 +1,633 @@
+<!-- nv2 -->
+<!-- main color #121180-->
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <link rel="stylesheet" href="aos.css">
+  <title>Document</title>
+  <style>
+
+   .box{
+     background: url(assets/step1.jpg) no-repeat center center /cover ;
+width: 50vw;
+height: 35rem;
+position: sticky;
+top: 0px;
+/* transform-style: preserve-3d;
+perspective-origin: 100px;
+transform: rotate3d(1, 1, 1, 42deg); */
+ animation: animate ease-out forwards;
+ animation-timeline: view() ;
+ animation-range-start: cover 400px;
+ scale: 1.1 1.1;
+ scale: 1 1;
+   }
+   /* new */
+   @keyframes animate {
+      
+      0% {translate: 0vw ; scale: 2 1;   background: url(assets/step1.jpg) no-repeat center center /cover ;}
+      2% {translate:47vw ;  scale: 1 1;  background: url(assets/step1.jpg) no-repeat center center /cover ;}
+ 24% {translate:47vw ; scale: 1 1;  background: url(assets/step1.jpg) no-repeat center center /cover ;}
+      26% {translate: 0vw ;  scale: 2 1;   background: url(assets/step2.jpg) no-repeat center center /cover ;}
+ 27% {translate: 0vw ;  scale: 1 1;   background: url(assets/step2.jpg) no-repeat center center /cover ;}
+ 
+ 40% {translate:00vw ; scale: 1 1;   background: url(assets/step2.jpg) no-repeat center center /cover ;;}
+ 42% {translate:47vw ;  scale: 2 1;  background: url(assets/step3.jpg) no-repeat center center /cover; }
+ 43% {translate:47vw ;  scale: 1 1;  background: url(assets/step3.jpg) no-repeat center center /cover; }
+ 
+ 60% {translate:47vw ; scale: 1 1;  background: url(assets/step3.jpg) no-repeat center center /cover; ;}
+ 61% {translate:47vw ; scale: 2 1;  background: url(assets/step3.jpg) no-repeat center center /cover; ;}
+ 62% {translate:00vw ;  scale: 1 1;  background: url(assets/step4.jpg) no-repeat center center /cover ; ;}
+ 
+ 75% {translate:00vw ; scale: 1 1;  background: url(assets/step4.jpg) no-repeat center center /cover ; ;}
+ 77% {translate:47vw ;  scale: 2 1;  background: url(assets/step_5.jpg) no-repeat center center /cover; ;}
+ 78% {translate:47vw ;  scale: 1 1;  background: url(assets/step_5.jpg) no-repeat center center /cover; ;}
+100% {translate:47vw ; scale: 1 1;  background: url(assets/step_5.jpg) no-repeat center center /cover; }
+    
+  }
+ </style>
+ </head>
+ <body>
+
+  <div class="sm:h-[100vh] h-[100vh] relative top-[-2.5rem] m-0 p-0 w-[100vw] bg-[#121180]">
+   <header class="fixed w-[100vw] p-1 lg:py-2 top-0 shadow-2xl md:rounded-full text-[#121180] z-50 bg-white">
+    <div class=" flex flex-wrap justify-center flex-col md:flex-row items-center">
+      <div class="flex flex-row max-[799px]:flex-col">
+        <div class="flex">
+
+          <a class="flex justify-start title-font font-medium items-center text-[#121180] mx-4">
+            <img class="w-[6.5rem]" src="assets/strapilogo.png" alt="image">
+          </a>
+        </div>
+        <div class="flex max-[799px]:flex-col max-[799px]:items-center">
+          
+        
+     <nav  id="nav" class="max-[799px]:flex-col md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center max-[799px]:hidden" id="menu">
+      <a class="mr-2 font-sans font-medium rounded-lg p-2 md:text-2xl text-x1 hover:text-white transition-all hover:bg-[#121180]">Home</a>
+      <a class="mr-2 font-sans font-medium rounded-lg p-2 md:text-2xl text-x1 hover:text-white transition-all hover:bg-[#121180]">Reservations</a>
+      <a class="mr-2 font-sans font-medium rounded-lg p-2 md:text-2xl text-x1 hover:text-white transition-all hover:bg-[#121180]">Order&nbsp;now</a>
+      <a class="mr-2 font-sans font-medium rounded-lg p-2 md:text-2xl text-x1 
+      hover:text-white transition-all hover:bg-[#121180]">About&nbsp;us</a>
+      <a class="mr-2 font-sans font-medium rounded-lg p-2 md:text-2xl text-x1 hover:text-white transition-all hover:bg-[#121180]">Contact&nbsp;us</a>
+     </nav>
+     <button onclick="navChange()" id="menuButton" class="min-[799px]:hidden inline-flex items-center  bg-gray-100 border-0  px-3 focus:outline-none hover:bg-gray-200 rounded text-base  md:mt-0">
+      <img class="w-5 h-5 " src="assets/menu.svg" alt="">
+     </button>
+    </div>
+ 
+
+    </div>
+    </div>
+  </header>
+    
+   <div class="flex absolute justify-between">
+    <div class="left w-1/2">
+     <img src="assets/hero-top-left-image.svg" alt>
+    </div>
+    <div class="right w-1/2">
+     <img src="assets/hero-top-right-image.svg" alt>
+    </div>
+   </div>
+
+   
+   <div class="h-[100vh] lg:top-[20vh] relative top-[6rem]  w-[100vw] z-">
+    <div data-aos="fade-up" data-aos-duration="1400"  class="flex flex-col justify-center lg:mt-0 mt-[4rem]  items-center">
+     <!-- <center> -->
+     <p class="my-4 md:w-1/3 text-[#a5a5c3] text-center w-1/2">
+      Try Strapi Cloud for 14 days Deploy your app!
+     </p>
+     <h1 class="my-4 w-[60vw] leading-none text-white text-center text-[3rem] md:text-7xl font-extrabold">
+      Manage Any Content. Anywhere.
+     </h1>
+     <p class="my-4 md:w-1/3 text-[#a5a5c3] w-1/2">
+      The leading open-source headless CMS. 100% JavaScript / TypeScript
+      and fully customizable.
+     </p>
+     <div class="bg-[rgba(0,0,0,.69)] p-3 flex rounded-lg text-white ">
+      <p class="mr-2">
+
+       npx create-strapi-app@latest my-project
+      </p>
+      <!-- copypaste svg -->
+      <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.5 7.875H9.625C8.6585 7.875 7.875 8.6585 7.875 9.625V17.5C7.875 18.4665 8.6585 19.25 9.625 19.25H17.5C18.4665 19.25 19.25 18.4665 19.25 17.5V9.625C19.25 8.6585 18.4665 7.875 17.5 7.875Z" stroke="#F6F6F9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.375 14.125H4.5C4.03587 14.125 3.59075 13.9406 3.26256 13.6124C2.93437 13.2842 2.75 12.8391 2.75 12.375V4.5C2.75 4.03587 2.93437 3.59075 3.26256 3.26256C3.59075 2.93437 4.03587 2.75 4.5 2.75H12.375C12.8391 2.75 13.2842 2.93437 13.6124 3.26256C13.9406 3.59075 14.125 4.03587 14.125 4.5V5.375" stroke="#F6F6F9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+     </div>
+     <div class="md:w-1/3 flex mt-4 sm:flex-row flex-col w-[80vw] justify-around">
+      <button class="px-3 py-2 rounded-md m-2 hover:bg-white transition-all bg-pink-400 text-white text-xl hover:text-pink-400 box-border">
+       Get started
+      </button>
+      <button class="px-3 py-2 rounded-md m-2 bg-white hover:bg-blue-500 transition-all text-blue-500 text-xl hover:text-white box-border">
+       Demo
+      </button>
+     </div>
+     <!-- </center> -->
+    </div>
+    
+   </div>
+  </div>
+  <!-- images -->
+  <div class="flex relative top-[-2.5rem] lg:flex-row flex-col justify-center items-center w-[100vw] bg-[#121180]">
+   <div class="m-10 ">
+    <img data-aos="fade"  data-aos-duration="1500" src="assets/main.png" alt="">
+   </div>
+   <div class="m-10">
+    <img data-aos="fade"  data-aos-duration="1500" src="assets/jsonfile.png" alt="">
+   </div>
+  </div>
+  <!-- build our app -->
+  <div class="h-auto">
+  <img class="h-auto lg:w-[10vw] w-[15vw] float-right" src="assets/ribbon.svg" alt>
+  <div class="flex bg-gradient-to-b h-auto from-[#ecf1f8] to-white items-center w-full">
+   <div class=" m-auto justify-center w-[90vw]" style="display: flex">
+    <center>
+     <p  data-aos="fade-up" data-aos-duration="1300"  class="text-indigo-400 font-sans font-medium m-8">FOR DEVELOPERS</p>
+     <h1  data-aos="fade-up" data-aos-duration="1300"    class="text-5xl font-bold font-sans text-[#121180] m-8">
+      Build apps fast.
+     </h1>
+     <p  data-aos="fade-up" data-aos-duration="1300"   class="text-[#6578a1] text-xl md:w-4/5 m-8">
+      Get your backend done in minutes instead of weeks. Easily build
+      customizable content API and use them with a modern tech stack.
+     </p>
+    
+     <div class="d-flex flex-wrap lg:flex-row flex-col justify-center lg:w-[80vw] items-center bg-[#edf5fe]" style="display: flex">
+      <!-- card -->
+      <div  data-aos="fade" data-aos-duration="1500"  class="lg:w-[23rem]  w-[60vw] bg-[#edf5fe] m-8"> 
+        <div class="flex flex-row "><img src="assets/customize.svg" alt>
+        <h1 class="text-3xl font-semibold text-[#121180] mx-3 ">Customizable</h1>
+      </div>
+      <p class="flex justify-start text-[#6578a1] text-xl mt-4 text-start">Easily customize the admin panel as
+        well as the API. Extend your content
+        management with custom plugins, in
+        seconds.</p>
+    </div> 
+    <div  data-aos="fade" data-aos-duration="1500" class="lg:w-[23rem]  w-[60vw] bg-[#edf5fe] m-8"> 
+      <div class="flex flex-row "><img src="assets/customize.svg" alt>
+      <h1 class="text-3xl font-semibold text-[#121180] mx-3 ">Open Source</h1>
+    </div>
+    <p class="flex justify-start text-[#6578a1] text-xl text-start mt-4">Forever. The entire codebase is
+     available on GitHub and maintained
+     by hundreds of contributors.</p>
+  </div> 
+  <div  data-aos="fade" data-aos-duration="1500" class="lg:w-[23rem]  w-[60vw] bg-[#edf5fe] m-8"> 
+    <div class="flex flex-row "><img src="assets/customize.svg" alt>
+    <h1 class="text-3xl font-semibold text-[#121180] mx-3 ">RESTful or GraphQL</h1>
+  </div>
+  <p class="flex justify-start text-[#6578a1] text-start text-xl mt-4">Consume the API from any client
+   (React, Vue, Angular), mobile apps or
+   even IoT devices, using REST or
+   GraphQL.</p>
+</div> 
+<div  data-aos="fade" data-aos-duration="1500" class="lg:w-[23rem]  w-[60vw] bg-[#edf5fe] m-8"> 
+  <div class="flex flex-row "><img src="assets/customize.svg" alt>
+  <h1 class="text-3xl font-semibold text-[#121180] mx-3 ">Self-hosted or Cloud</h1>
+</div>
+<p class="flex justify-start text-start text-[#6578a1] text-xl mt-4">Extend the capabilities of Strapi with
+ Strapi Cloud, our fully managed
+ platform or deploy on-premises, on
+ your favorite public cloud or the PaaS
+ of your choice. You’re in control, no
+ lock-in.</p>
+</div> 
+     </div>
+    </center>
+   </div>
+  </div>
+ </div>
+  <!-- hows it works -->
+  <div  class="h-[60vh] w-[100vw] ">
+    <img class="h-auto lg:w-[10vw] w-[15vw] float-left" src="assets/ribbon.svg" alt>
+  <div class="flex bg-gradient-to-b from-[#ecf1f8] to-white items-center w-full">
+   <div class=" h-[80vh] m-auto justify-center w-[90vw]" style="display: flex">
+    <center>
+     <p class="text-purple-600 font-sans font-medium m-8">STEP-BY-STEP GUIDE</p>
+     <h1 class="text-5xl font-bold font-sans text-[#121180] m-8">
+      How does it work?
+     </h1>
+     <p class="text-[#6578a1] text-xl md:w-4/5 m-8">
+     Make a flexible data structure in 2 minutes.
+Use our powerful features to customize your API.
+
+     </p>
+  
+     <div class="d-flex flex-wrap lg:flex-row flex-col justify-center lg:w-[80vw] items-center bg-[#edf5fe]" style="display: flex">
+     </div>
+    </center>
+   </div>
+  </div>
+ </div>
+ <!-- ANimation stuff -->
+ <div class="">
+  <div class="box max-[1024px]:hidden">
+  
+</div>
+<div class="lg:h-[100vh] w-[100vw] flex max-[1024px]:justify-center">
+  <div class="right lg:w-[50vw]">
+    <div class="flex flex-col ">
+  <p class="text-xl text-yellow-300 mt-10 ml-6">Step 1</p>
+  <h1 class="m-4 text-[#121180] text-5xl">Effortlessly create content structures that . flex to your needs.</h1>
+  <p class="text-2xl text-[#5c5ac4] m-8">No matter which data structure is the best for your business, you can easily define models
+    and add relations to create rich layout experiences.</p>
+</div>
+  </div>
+</div>
+<div class=" m-auto lg:hidden"> 
+  <img class="w-[60vh] block m-auto " src="assets/step1.svg" alt="">
+</div>
+<div class="lg:h-[100vh] w-[100vw] flex max-[1024px]:justify-center justify-end">
+  <div class="left lg:w-[50vw]">
+   <div class="flex flex-col ">
+    <p class="text-xl text-yellow-300 mt-10 ml-6">Step 2</p>
+    <h1 class="m-4 text-[#121180] text-5xl">Seamlessly write, edit and manage any content types.</h1>
+    <p class="text-2xl text-[#5c5ac4] m-8">Once you have created your content architecture, you can start telling engaging stories.
+      Allow cross-functional teams to deliver content faster no matter your industries, use cases,
+      locations, devices, and channels.</p>
+  </div>
+  </div>
+</div>
+<div class=" m-auto lg:hidden"> 
+  <img class="w-[60vh] block m-auto " src="assets/step2.svg" alt="">
+</div>
+<div class="lg:h-[100vh] w-[100vw] flex max-[1024px]:justify-center">
+  <div class="right lg:w-[50vw]">
+   <div class="flex flex-col ">
+    <p class="text-xl text-yellow-300 mt-10 ml-6">Step 3</p>
+    <h1 class="m-4 text-[#121180] text-5xl">Easily build apps and digital experiences without the distraction of CMS complexities.</h1>
+    <p class="text-2xl text-[#5c5ac4] m-8">Focus your talent on what matters. You can integrate individual best-in-class services by
+      third-party vendors and connect any framework of your choice.</p>
+  </div>
+  </div>
+</div>
+<div class=" m-auto lg:hidden"> 
+  <img class="w-[60vh] block m-auto " src="assets/step3.png" alt="">
+</div>
+<div class="lg:h-[100vh] w-[100vw] flex max-[1024px]:justify-center justify-end">
+  <div class="left lg:w-[50vw]">
+   <div class="flex flex-col ">
+    <p class="text-xl text-yellow-300 mt-10 ml-6">Step 4</p>
+    <h1 class="m-4 text-[#121180] text-5xl">Consume Strapi API from any client using REST or GraphQL.</h1>
+    <p class="text-2xl text-[#5c5ac4] m-8">You can use a standard RESTful API or GraphQL to query your content. Based on Apollo, our
+      GraphQL plugin offers a full compatibility with the whole GraphQL ecosystem.</p>
+  </div>
+  </div>
+</div>
+<div class=" m-auto lg:hidden"> 
+  <img class="w-[60vh] block m-auto " src="assets/step4.svg" alt="">
+</div>
+<div class="lg:h-[100vh] w-[100vw] flex max-[1024px]:justify-center">
+  <div class="right lg:w-[50vw]">
+   <div class="flex flex-col ">
+    <p class="text-xl text-yellow-300 mt-10 ml-6">Step 5</p>
+    <h1 class="m-4 text-[#121180] text-5xl">Deploy on Strapi Cloud or on any cloud platforms.</h1>
+    <p class="text-2xl text-[#5c5ac4] m-8">Strapi Cloud, self-hosted servers, or popular cloud platforms, the choice is yours. Strapi can
+      quickly be deployed on Strapi Cloud or on services such as AWS, Azure, GCP and others or
+      locally using Docker.</p>
+  </div>
+  </div>
+</div>
+<div class=" m-auto lg:hidden"> 
+  <img class="w-[60vh] block m-auto " src="assets/step_5_.jpg" alt="">
+</div>
+<!-- <img class="box" src="/mainmy-2.jpg" alt=""> -->
+</div>
+ <!-- ANimation stuff -->
+ <!-- integrations -->
+ <div class="h-auto">
+  <img class="h-auto lg:w-[10vw] w-[15vw] float-right" src="assets/ribbon.svg" alt>
+  <div class="flex bg-gradient-to-b h-auto from-[#ecf1f8] to-white items-center w-full">
+   <div class=" m-auto justify-center w-[90vw]" style="display: flex">
+    <center>
+     <p  data-aos="fade-up" data-aos-duration="1500" class="text-green-400 font-sans font-medium m-8">INTEGRATIONS</p>
+     <h1  data-aos="fade-up" data-aos-duration="1500" class="text-5xl font-bold font-sans text-[#121180] m-8">
+      All your favorite dev tools work with Strapi.
+     </h1>
+     <p  data-aos="fade-up" data-aos-duration="1500" class="text-[#6578a1] text-xl md:w-4/5 m-8">
+      Connect your favorite databases, frontend frameworks, or static site generators. Choose where you want to host your websites. Integrate with your favorite tools, and work with the best of each world. No vendor lock-in.
+     </p>
+     
+     <div class="d-flex flex-wrap lg:flex-row flex-col justify-center lg:w-[70vw] items-center bg-[#edf5fe]" style="display: flex">
+      <!-- card -->
+      <!-- Gatsby -->
+      <div  data-aos="fade" data-aos-duration="1500" class="lg:w-[14rem] w-[60vw] h rounded-[30px] bg-white m-8"> 
+        <div class="flex flex-col ">
+         <center>
+
+          <img class="w-[7rem] mt-4" src="assets/Gatsby.svg" alt>
+         </center>
+        <h1 class="text-2xl font-semibold text-[#121180] mx-3 ">Gatsby
+        </h1>
+        <p class="flex justify-center border-b-2 px-5 border-[#f1f8fc] border-solid text-[#6578a1] text-lg mt-4 ">Gatsby is a blazing fast modern site generator for React.</p>
+        <hr>
+        <button class="w-[inherit] p-3 text-semibold transition-all text-xl hover:text-white hover:bg-green-600 text-green-600 text-bold text-semibold rounded-b-[30px]">Create Project</button>
+       </div>
+    </div> 
+  
+      <!-- React -->
+      <div  data-aos="fade" data-aos-duration="1500" class="lg:w-[14rem] w-[60vw] h rounded-[30px] bg-white m-8"> 
+       <div class="flex flex-col h-[20rem] ">
+        <center>
+
+         <img class="w-[8.5rem] mt-4" src="assets/React-logo.svg" alt>
+        </center>
+       <h1 class="text-2xl font-semibold text-[#121180] mx-3 ">React
+       </h1>
+       <p class="flex justify-center border-b-2 px-5 border-[#f1f8fc] border-solid text-[#6578a1] text-lg mt-4 ">Gatsby is a blazing fast modern site generator for React.</p>
+       <hr>
+       <button class="w-[inherit] p-3 text-semibold transition-all text-xl hover:text-white hover:bg-green-600 text-green-600 text-bold text-semibold rounded-b-[30px]">Create Project</button>
+      </div>
+   </div>   <!-- Next -->
+   <div  data-aos="fade" data-aos-duration="1500" class="lg:w-[14rem] w-[60vw] h rounded-[30px] bg-white m-8"> 
+     <div class="flex flex-col h-[20rem] ">
+      <center>
+
+       <img class="w-[8.5rem] mt-4" src="assets/Nextjs.svg" alt>
+      </center>
+     <h1 class="text-2xl font-semibold text-[#121180] mx-3 ">Next.js
+     </h1>
+     <p class="flex justify-center border-b-2 px-5 border-[#f1f8fc] border-solid text-[#6578a1] text-lg mt-4 ">Gatsby is a blazing fast modern site generator for React.</p>
+     <hr>
+     <button class="w-[inherit] p-3 text-semibold transition-all text-xl hover:text-white hover:bg-green-600 text-green-600 text-bold text-semibold rounded-b-[30px]">Create Project</button>
+    </div>
+ </div>   <!-- nux-->
+ <div  data-aos="fade" data-aos-duration="1500" class="lg:w-[14rem] w-[60vw] h rounded-[30px] bg-white m-8"> 
+   <div class="flex flex-col h-[20rem] ">
+    <center>
+
+     <img class="w-[4.5rem] mt-4" src="assets/nuxt.svg" alt>
+    </center>
+   <h1 class="text-2xl font-semibold text-[#121180] mx-3 ">Nuxt
+   </h1>
+   <p class="flex justify-center border-b-2 px-5 border-[#f1f8fc] border-solid text-[#6578a1] text-lg mt-4 ">Gatsby is a blazing fast modern site generator for React.</p>
+   <hr>
+   <button class="w-[inherit] p-3 text-semibold transition-all text-xl hover:text-white hover:bg-green-600 text-green-600 text-bold text-semibold rounded-b-[30px]">Create Project</button>
+  </div>
+</div>   <!-- Angular-->
+<div  data-aos="fade" data-aos-duration="1500" class="lg:w-[14rem] w-[60vw] h rounded-[30px] bg-white m-8"> 
+  <div class="flex flex-col h-[20rem] ">
+   <center>
+
+    <img class="w-[8.5rem] mt-10" src="assets/angular.png" alt>
+   </center>
+  <h1 class="text-2xl font-semibold text-[#121180] mx-3 mt-2">Angular
+  </h1>
+  <p class="flex justify-center border-b-2 px-5 border-[#f1f8fc] border-solid text-[#6578a1] text-lg mt-10 ">Gatsby is a blazing fast modern site generator for React.</p>
+  <hr>
+  <button class="w-[inherit] p-3 text-semibold transition-all text-xl hover:text-white hover:bg-green-600 text-green-600 text-bold text-semibold rounded-b-[30px]">Create Project</button>
+ </div>
+</div>   <!-- flutter -->
+<div  data-aos="fade" data-aos-duration="1500" class="lg:w-[14rem] w-[60vw] h rounded-[30px] bg-white m-8"> 
+  <div class="flex flex-col h-[20rem] ">
+   <center>
+
+    <img class="w-[8.5rem] mt-10" src="assets/flutter.svg" alt>
+   </center>
+  <h1 class="text-2xl font-semibold text-[#121180] mx-3 mt-2 ">Flutter
+  </h1>
+  <p class="flex justify-center border-b-2 px-5 mt-10 border-[#f1f8fc] border-solid text-[#6578a1] text-lg ">Gatsby is a blazing fast modern site generator for React.</p>
+  <hr>
+  <button class="w-[inherit] p-3 text-semibold transition-all text-xl hover:text-white hover:bg-green-600 text-green-600 text-bold text-semibold rounded-b-[30px]">Create Project</button>
+ </div>
+</div> 
+ 
+
+   
+
+     </div>
+    </center>
+   </div>
+  </div>
+ </div>
+ <!-- testimonials -->
+ <div class="h-auto">
+  <img class="h-auto lg:w-[10vw] w-[15vw] float-right" src="assets/ribbon.svg" alt>
+  <div class="flex bg-gradient-to-b h-auto from-[#ecf1f8] to-white items-center w-full">
+   <div  data-aos="fade" data-aos-duration="1500" class=" m-auto justify-center w-[90vw]" style="display: flex">
+    <center>
+     <p class="text-green-400 font-sans font-medium m-8">INTEGRATIONS</p>
+     <h1 class="text-5xl font-bold font-sans text-[#121180] m-8">
+      All your favorite dev tools work with Strapi.
+     </h1>
+     <p class="text-[#6578a1] text-xl md:w-4/5 m-8">
+      Connect your favorite databases, frontend frameworks, or static site generators. Choose where you want to host your websites. Integrate with your favorite tools, and work with the best of each world. No vendor lock-in.
+     </p>
+     </center>
+     </div>
+     </div>
+     <div class="">
+
+     </div>
+      <!-- exp -->
+<div class=" w-[100vw] z-10 " style="background:url('assets/testimonials.jpeg') center center /cover fixed ;">
+ <div class="flex overflow-hidden lg:flex-row flex-col items-center justify-center ">
+
+  <!-- testimonal card -->
+  <div  data-aos="fade" data-aos-duration="1300" class="lg:w-[26rem]  w-[90vw] rounded-xl flex flex-col h-max m-3 p-4 bg-gray-100">
+<img class="w-[13rem]" src="assets/vercel.png" alt> 
+<p class="m-6 text-base text-indigo-500">Strapi and Next.js both build on the same philosophy: open source is the path to success. Combine them with Vercel deployment and you have a stack with virtually infinite scalability, global performance, and security.
+<div class="flex flex-row items-center">
+ <img class="w-[4rem]" src="assets/man_jerome.png"> 
+ <span class="text-pink-600 font-bold">
+  Gullimero Roach
+
+ </span>
+ <span class="mx-1 text-[10px] ">
+  ,Ceo
+ </span>
+</div>
+  </p></div>
+  <div  data-aos="fade" data-aos-duration="1300" class="lg:w-[26rem]  w-[90vw] rounded-xl flex flex-col h-max m-3 p-4 bg-gray-100">
+   <img class="w-[13rem]" src="assets/Tesco.png" alt> 
+   <p class="m-6 text-base text-indigo-500">With Strapi, we can be sure that the solution can be customized to always fit our needs. It helped us reduce time-to-market and deliver the project on time.
+   <div class="flex flex-row items-center">
+    <img class="w-[4rem]" src="assets/man_jerome.png"> 
+    <span class="text-pink-600 font-bold">
+     Michał Pawłowski
+
+   
+    </span>
+    <span class="mx-1 text-[10px]">
+     ,Head of Software Development @Tesco Technology
+    </span>
+   </div>
+     </p></div>
+     <div  data-aos="fade" data-aos-duration="1300" class="lg:w-[26rem]  w-[90vw] rounded-xl flex flex-col h-max m-3 p-4 bg-gray-100">
+      <img class="w-[13rem]" src="assets/societe.svg" alt> 
+      <p class="m-6 text-base text-indigo-500">Strapi has turned out to be a great choice so far was really quick, and in a few days we were able to have a drafted site & running, leveraging Strapi main functionalities.
+      <div class="flex flex-row items-center">
+       <img class="w-[4rem]" src="assets/man_jerome.png"> 
+       <span class="text-pink-600 font-bold">
+        Jérôme Chauveau
+      
+       </span>
+       <span class="mx-1 text-[10px]">
+       , DevOps Team Lead
+       </span>
+      </div>
+        </p></div>
+          
+ 
+ </div>
+</div>
+     <!-- exp -->
+ </div>
+<!-- contact Form -->
+<div class="">
+<img data-aos-duration="2000" data-aos="fade-up-right" class="float-right relative top-[6rem] right-[5rem]" src="assets/plane.svg" alt="image">
+<div class="h-[100vh] w-[100vw] flex justify-center items-center"> 
+ <div class="flex h-[70vh] w-[90vw] rounded-3xl " style="background:url('assets/Contact_form.avif') center center /cover ;">
+ <div class=" flex flex-col justify-center items-center">
+  <h1 class="text-white text-3xl font-sans m-3">Join our Newsletter</h1>
+  <p class="text-center text-white text-base font-sans m-3">Get all the latest Strapi dates, news and events.</p>
+  <input class="w-[15rem] h-[3rem] px-[2rem] rounded-xl m-2" type="text" placeholder="Email">
+  <button class="w-[15rem] h-[3rem] rounded-xl bg-purple-500 text-white m-2">button</button>
+  <p class="lg:w-1/4 text-white text-center m-4">By submitting this form you consent to us emailing you occasionally about our products and services. You can unsubscribe from emails at any time, and we will never pass your email to third parties.</p>
+ </div>
+ 
+ </div>
+ 
+</div>
+</div>
+<!-- footer -->
+<div class="">
+ <img class="h-auto lg:w-[10vw] block w-[15vw] float-right" src="assets/footer_svg.svg" alt="image">
+ <div data-aos="fade-up" data-aos-duration="1500" class="w-[100vw] flex ">
+
+  <div class="w-[100vw] flex h-[50vh] bg-white flex-col items-center">
+   <h1 class="text-5xl font-bold font-sans text-[#121180] text-center my-8">Unleash content.</h1>
+   <p 
+   
+   
+   class=" p-3 text-center text-base rounded-lg shadow-2xl font-semibold text-blue-900 hover:animate-pulse hover:cursor-pointer 
+   ">Get started on Strapi cloud</p>
+   <p class="m-2 bg-[#4f4dd2] p-3 text-center md:text-base text-sm  rounded-lg font-mono text-white">npx create-strapi-app@latest my-project</p>
+  </div>
+  
+ </div>
+  <!-- tailblocks footer -->
+  <footer data-aos="fade" data-aos-duration="1500" class="text-gray-600 body-font">
+  <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+   <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+    <a class="flex title-font font-medium items-center md:justify-start justify-center text-[#121180]">
+     <img src="assets/strapilogo.png" alt="">
+     
+    </a>
+    <p class="mt-2 text-sm text-gray-500">Strapi is the leading open-source Headless CMS. Strapi gives developers the freedom to use their favorite tools and frameworks while allowing editors to easily manage their content and distribute it anywhere./p>
+   </div>
+   <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 md:text-left text-center mt-[10rem]">
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+     <h2 class="title-font font-medium text-[#121180] tracking-widest text-sm mb-3">CATEGORIES</h2>
+     <nav class="list-none mb-10">
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">First Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+      </li>
+     </nav>
+    </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+     <h2 class="title-font font-medium text-[#121180] tracking-widest text-sm mb-3">CATEGORIES</h2>
+     <nav class="list-none mb-10">
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">First Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+      </li>
+     </nav>
+    </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+     <h2 class="title-font font-medium text-[#121180] tracking-widest text-sm mb-3">CATEGORIES</h2>
+     <nav class="list-none mb-10">
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">First Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+      </li>
+     </nav>
+    </div>
+    <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+     <h2 class="title-font font-medium text-[#121180] tracking-widest text-sm mb-3">CATEGORIES</h2>
+     <nav class="list-none mb-10">
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">First Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Second Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Third Link</a>
+      </li>
+      <li>
+       <a class="text-gray-600 hover:text-gray-800">Fourth Link</a>
+      </li>
+     </nav>
+    </div>
+   </div>
+  </div>
+  <div class="bg-gray-100">
+   <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+    <p class="text-gray-500 text-sm text-center sm:text-left">© 2020 Tailblocks —
+     <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@knyttneve</a>
+    </p>
+    <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+     <a class="text-gray-500">
+      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+       <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+      </svg>
+     </a>
+     <a class="ml-3 text-gray-500">
+      <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+       <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+      </svg>
+     </a>
+     <a class="ml-3 text-gray-500">
+      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+       <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+       <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+      </svg>
+     </a>
+     <a class="ml-3 text-gray-500">
+      <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+       <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+       <circle cx="4" cy="4" r="2" stroke="none"></circle>
+      </svg>
+     </a>
+    </span>
+   </div>
+  </div>
+ </footer>
+ <!-- tailblocks footer -->
+ 
+</div>
+<script src="aos.js"></script>
+<script>
+   AOS.init();
+let nav = document.getElementById("nav")
+  const navChange=()=>{
+  nav.classList.toggle("max-\[799px\]\:hidden")   
+  }
+  </script>
+ </body>
+</html>
